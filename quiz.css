@@ -1,0 +1,107 @@
+body 
+{
+    font-family: 'Roboto', sans-serif;
+    background-image: url('back.jpg');
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+h2 {
+    margin-right: 5px;
+}
+.button 
+{
+    
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    float:right;
+    background-color: #fff;
+    margin: 0 25px 0 2px;
+    cursor: pointer;
+}
+.button a 
+{
+    text-decoration: none;
+    color: #555;
+    line-height: 25px;
+}
+#container 
+{
+    position: absolute;
+    width:50%;
+    margin: 144px 141px;
+    padding: 50px 30px;
+    background-color: white;
+    border-radius: 43% 57% 85% 15% / 63% 29% 71% 37%    ;
+    color: black;
+    box-shadow: 0 0 50px 4px black;
+}
+#container ul 
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 500px;
+}
+#container ul li
+{
+    background: #05386b;
+    width: 200px;
+    margin: 10px;
+    padding: 5px;
+    display: inline-block; 
+    color: #edf5e1;
+    border-radius: 5px 5px 5px 5px;
+}
+#prev 
+{
+    display:none;
+}
+#start 
+{
+    display:none;
+    width: 100px;
+}
+input[type="radio"]{
+    cursor: pointer;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 400px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    color: white;
+  }
+  
+  .sidenav ul{
+    display: flex;
+    list-style-type: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .sidenav ul li {
+    background: white;
+    border-radius: none;
+    padding: 15px;
+    margin: 13px;
+    width: 20px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .sidenav ul li:hover{
+      background: blue;
+      color: white;
+  }
+  

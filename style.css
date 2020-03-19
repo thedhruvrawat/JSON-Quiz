@@ -1,0 +1,92 @@
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    background: url(back.jpg) no-repeat 50% 50%;
+    /* background-color: black; */
+    background-size: cover;
+    height: 100vh;
+    display: table;
+}
+
+.wrapper{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    animation: disappear 0.5s 1;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes disappear{
+    from {opacity :1;}
+    to {opacity :0;}
+}
+
+path{
+    stroke: #fff;
+    fill: #fff;
+    stroke-dasharray: 1000;
+    opacity: 10;
+    animation: animate 3s cubic-bezier(.42,0,.58,1);
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 1000;
+    }
+    30%{
+        opacity: 10;
+        fill: none;
+        stroke-dashoffset: 1000;
+    }
+    90%{
+        fill: rgba(255, 255, 255, 0);
+    }
+    100%{
+        opacity: 10;
+        fill: rgba(255, 255, 255, 1);
+        stroke-dashoffset: 0;
+    }
+}
+
+.container{
+    margin-top: 10vh;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    font-size: 3vw;
+    padding: 1vw 1.5vw;
+    width: 40vw;
+    text-align: center;
+    border: 0.1rem solid #002A52;
+    margin-bottom: 1vh;
+    text-decoration: none;
+    color: #002A52;
+    background-color: white;
+    border-radius: 100px 100px 100px 100px;
+    margin-top: 10px;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+  }
