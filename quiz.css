@@ -81,6 +81,7 @@ input[type="radio"]{
     overflow-x: hidden;
     padding-top: 20px;
     color: white;
+    opacity: 0.68;
   }
   
   .sidenav ul{
@@ -92,7 +93,7 @@ input[type="radio"]{
     flex-wrap: wrap;
   }
   .sidenav ul li {
-    background: white;
+    background: white ;
     border-radius: none;
     padding: 15px;
     margin: 13px;
@@ -102,8 +103,8 @@ input[type="radio"]{
   }
 
   .sidenav ul li:hover{
-      background: blue;
-      color: white;
+      background: greenyellow ;
+      color: black;
   }
   
   #question{
