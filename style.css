@@ -22,16 +22,16 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 35%;
-    animation: disappear 0.5s 1;
-    animation-delay: 4s;
-    animation-fill-mode: forwards;
+    /* animation: disappear 0.5s 1; */
+    /* animation-delay: 4s; */
+    /* animation-fill-mode: forwards; */
 }
 
 
-@keyframes disappear{
+/* @keyframes disappear{
     from {opacity :1;}
     to {opacity :0;}
-}
+} */
 
 path{
     stroke: #fff;
