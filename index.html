@@ -1,74 +1,28 @@
 <html>
-	<head>
-		<title>Make Quiz Website</title>
-		<link rel="stylesheet" href="quiz.css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-	</head>
-	<body>
-	<div class="main">
-		<div id="container">
-            <h1>Quiz</h1>
-   			<br/>
-  			<div id="quiz"></div>
-    		<div class="button" id="next"><a href="#">Next</a></div>
-    		<div class="button" id="prev"><a href="#">Prev</a></div> 
-		</div>
-	</div>
-		
-	
-<div class="sidenav">
-	<h1> Toolbar </h1>
-	<div class="questions">
-		<ul>
-			<li> 1 </li>
-			<li> 2 </li>
-			<li> 3 </li>
-			<li> 4 </li>
-			<li> 5 </li>
-			<li> 6 </li>
-			<li> 7 </li>
-			<li> 8 </li>
-			<li> 9 </li>
-			<li> 10 </li>
-			<li> 11 </li>
-			<li> 12 </li>
-			<li> 13 </li>
-		</ul>
-	</div>
-  </div>
-  <div id="CLOCK" class="clock"></div>
-  <script type="text/javascript">
-	 function showTime(){
-		var date = new Date();
-		var h = date.getHours();
-		var m = date.getMinutes();
-		var s = date.getSeconds();
-		var session="AM";
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="logn.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+</head>
 
-		if (h==0){
-			h=12;
-		}
-		if (h>12){
-			h=h-12;
-			var session="PM";
-		}
+<body>
+   
+   <div class="signin">
 
-		h=(h<10) ? "0" + h :h;
-		m=(m<10) ? "0" + m :m;
-		s=(s<10) ? "0" + s :s;
+<form>
+<h2 style="color:#fff;">Log In</h2>
+<input type="text" name="username" placeholder="Username"/><br /><br />
+<input type="password" name="password" placeholder="Password" /><br /><br />
+<a href="loader.html"><input type="button" value="Log In" /></a><br /><br />
+<div id="container">
+<a href="re.html" style=" margin-right:0px; font-size:13px; font-family:Tahoma, Geneva, sans-serif;">Reset password?</a>
+    <a href="for.html" style=" margin-left:30px; font-size:13px; font-family:Tahoma, Geneva, sans-serif;">Forget password</a>
+    </div><br /><br /><br /><br /><br /><br />
+Don't have account?<a href="sgnup.html" style="font-family:'Play', sans-serif;">&nbsp;Sign Up</a>
 
-		
-		var time = 'Current Time is ' + h + ":"+m+":"+s+' '+session;
-		document.getElementById("CLOCK").innerText=time;
-		document.getElementById("CLOCK").textContent=time;
-
-		setTimeout(showTime,1000);
-	 }
-
-	 showTime();
-  </script>
-
-        <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
-		<script src="quiz.js"></script>
-	</body>
+</form>
+</div>
+    
+</body>
 </html>
