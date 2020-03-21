@@ -2,6 +2,7 @@ body
 {
     font-family: 'Roboto', sans-serif;
     background-image: url('images/back.jpg');
+    background-size: cover;
 }
 h1 {
     text-align: center;
@@ -32,7 +33,7 @@ h2 {
 {
     position: absolute;
     width:50%;
-    margin: 144px 141px;
+    margin: 14vw 9vw;
     padding: 50px 30px;
     background-color: white;
     border-radius: 43% 57% 85% 15% / 63% 29% 71% 37%    ;
@@ -44,12 +45,12 @@ h2 {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    width: 500px;
+    width: 40vw;
 }
 #container ul li
 {
     background: #05386b;
-    width: 200px;
+    width: 14vw;
     margin: 10px;
     padding: 5px;
     display: inline-block; 
@@ -72,7 +73,7 @@ input[type="radio"]{
 
 .sidenav {
     height: 100%;
-    width: 400px;
+    width: 28vw;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -115,11 +116,45 @@ input[type="radio"]{
   .clock{
     position: absolute;
     top: 4%;
-    left: 11%;
+    left: 21%;
     transform: translate(-50%,-50%);
     color: #fff;
     font-size: 23px;
     /* border: 1px solid #ccc; */
     padding: 0px 5px 0px 5px;
     /* background-color: #111; */
+}
+
+@media screen and (max-width: 700px){
+    h1 {
+        font-size: 25px;
+        /* margin-bottom:-1px; */
+    }
+    h2{
+        font-size: 15px;
+    }
+    p{
+        font-size: 10px;
+    }
+    #container{
+        margin-left: 4vw;
+        
+    }
+    .sidenav {
+            width: 22vw;
+    }
+    .sidenav ul li {
+        margin: 8px;
+     }
+     .sidenav h1{
+         font-size: 15px;
+     }
+     .clock{
+         font-size: 15px;
+         left: 29%;
+     }
+     #quiz{
+         margin-top: 40px;
+     }
+
 }
