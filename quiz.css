@@ -20,6 +20,7 @@ h2 {
     background-color: #fff;
     margin: 0 25px 0 2px;
     cursor: pointer;
+    background-color: antiquewhite;
 }
 .button a 
 {
@@ -105,3 +106,7 @@ input[type="radio"]{
       color: white;
   }
   
+  #question{
+      margin-left: 11vw;
+      margin-top: -7vh;
+  }

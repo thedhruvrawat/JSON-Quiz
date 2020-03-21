@@ -49,11 +49,16 @@
   var quesCounter = 0;
   var selectOptions = [];
   var quizSpace = $('#quiz');
+
+  var bordrad = ["30% 70% 70% 30% / 30% 30% 70% 70% ", "33% 67% 56% 44% / 73% 64% 36% 27%", "55% 45% 27% 73% / 31% 58% 42% 69%", "19% 81% 58% 42% / 60% 30% 70% 40% ","30% 70% 70% 30% / 30% 30% 70% 70% ", "33% 67% 56% 44% / 73% 64% 36% 27%", "55% 45% 27% 73% / 31% 58% 42% 69%", "19% 81% 58% 42% / 60% 30% 70% 40% ", "30% 70% 70% 30% / 30% 30% 70% 70% ", "33% 67% 56% 44% / 73% 64% 36% 27%", "55% 45% 27% 73% / 31% 58% 42% 69%", "19% 81% 58% 42% / 60% 30% 70% 40% ","30% 70% 70% 30% / 30% 30% 70% 70% ", "33% 67% 56% 44% / 73% 64% 36% 27%", "55% 45% 27% 73% / 31% 58% 42% 69%", "19% 81% 58% 42% / 60% 30% 70% 40% "];
+  var m = 0;
+  
     
   nextQuestion();
     
   $('#next').click(function () 
     {
+        
         chooseOption();
         if (isNaN(selectOptions[quesCounter])) 
         {
@@ -75,6 +80,7 @@
   
   function createElement(index) 
     {
+        
         var element = $('<div>',{id: 'question'});
         var header = $('<h2>Question No. ' + (index + 1) + ' :</h2>');
         element.append(header);
@@ -85,6 +91,8 @@
         var radio = radioButtons(index);
         element.append(radio);
 
+        
+        
         return element;
     }
   
@@ -112,6 +120,9 @@
     {
         quizSpace.fadeOut(function() 
             {
+              ++m;
+              document.getElementById("container").style.borderRadius = bordrad[m];
+              
               $('#question').remove();
               if(quesCounter < allQuestions.length)
                 {
@@ -152,7 +163,7 @@
             correct++;
           }
         }
-        score.append('You scored ' + correct + ' out of ' +allQuestions.length);
+        score.append('You answered ' + correct + ' out of ' +allQuestions.length+' questions correctly. Congratulations!');
         return score;
   }
 })();
