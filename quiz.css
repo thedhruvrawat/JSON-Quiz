@@ -110,3 +110,15 @@ input[type="radio"]{
       margin-left: 11vw;
       margin-top: -7vh;
   }
+
+  .clock{
+    position: absolute;
+    top: 4%;
+    left: 11%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 23px;
+    /* border: 1px solid #ccc; */
+    padding: 0px 5px 0px 5px;
+    /* background-color: #111; */
+}
