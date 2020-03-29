@@ -1,50 +1,17 @@
 (function() 
  {
-  var allQuestions = [{
-    question: "This is a dummy question1",
-    options: ["A", "B", "C", "D"],
-    answer: 2
-  }, {
-    question: "This is a dummy question2",
-    options: ["A", "B", "C", "D"],
-    answer: 3
-  }, {
-    question: "This is a dummy question3",
-    options: ["A", "B", "C", "D"],
-    answer: 1
-  },{
-    question: "abcdThis is a dummy question",
-    options: ["A", "B"],
-    answer: 1
-  },{
-    question: "efgdThis is a dummy question",
-    options: ["A", "B", "C", "D"],
-    answer: 0
-  }, {
-    question: "sdsdsdThis is a dummy question",
-    options: ["A", "B", "C", "D"],
-    answer: 1
-  },{
-    question: "sdsdThis is a dummy question",
-    options: ["A", "B", "C", "D"],
-    answer: 0
-  },{
-    question: "dsdThis is a dummy question",
-    options: ["A", "B", "C", "D"],
-    answer: 0
-  },{
-    question: "sdThis is a dummy question",
-    options: ["A", "B", "C", "D"],
-    answer: 3
-  },{
-    question: "This is a dummy question",
-    options: ["A", "B", "C", "D"],
-    answer: 2
-  },{
-    question: "dsThis is a dummy question",
-    options: ["A", "B", "C", "D"],
-    answer: 0
-    }];
+  var allQuestions = [];
+
+  fetch("question.json")
+  .then(res => {
+    return res.json();
+  })
+  .then(loadedQuestions => {
+    console.log(loadedQuestions);
+    allQuestions = loadedQuestions;
+    nextQuestion();
+  });
+
   
   var quesCounter = 0;
   var selectOptions = [];

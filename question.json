@@ -1,0 +1,47 @@
+[
+    {
+      "question": "When was BITS Pilani established?",
+      "options": ["1932", "1964", "1981", "1956"],
+      "answer": 1
+    }, { 
+      "question": "Anant Maheshwari, a prominent BITSian is President of which of the following?",
+      "options": ["Google India", "Apple India", "Microsoft India", "Facebook India"],
+      "answer": 2
+    }, {
+      "question": "Which of the following BITSians has been awarded a Bharat Ratna?",
+      "options": ["Nanaji Deshmukh", "Indira Gandhi", "Deendayal Upadhyaya", "SK Roongta"],
+      "answer": 0
+    },{
+      "question": "BITS Spark programme launched in 2012, promotes entrepreneurship and provides angel funds.",
+      "options": ["True", "False"],
+      "answer": 0
+    },{
+      "question": "Which of the following has never been a guest lecturer at APOGEE?",
+      "options": ["Hasrat Jaipuri", "A.P.J. Abdul Kalam", "Jimmy Wales", "Kailash Satyarthi"],
+      "answer": 0
+    }, {
+      "question": "Which of the following universities in Sri Lanka were invited for BOSM?",
+      "options": ["University of Peradeniya", "Moratuwa University", "University of Colombo", "University of Ruhuna"],
+      "answer": 1
+    },{
+      "question": "BITSMUN was founded in ______.",
+      "options": ["2006", "2007", "2008", "2009"],
+      "answer": 1
+    },{
+      "question": "BITS Pilani is a partner in developing the MIT iCampus initiative. ",
+      "options": ["True", "False"],
+      "answer": 0
+    },{
+      "question": "The title sponsor for Conquest 2019 was __________.",
+      "options": ["Aditya Birla Group", "Reliance Communications", "Infosys", "Larsen and Toubro"],
+      "answer": 3
+    },{
+      "question": "Department of Management, BITS Pilani has been ranked 23 among management schools in India",
+      "options": ["True", "False"],
+      "answer": 1
+    },{
+      "question": "When was India's first technological museum built?",
+      "options": ["1954", "1971", "1983", "1960"],
+      "answer": 0
+    }
+]
