@@ -9,7 +9,7 @@ body{
     padding: 0;
     width: 100%;
     text-align: center;
-    background: url(images/back.jpg) no-repeat 50% 50%;
+    background: url(image1/back.jpg) no-repeat 50% 50%;
     /* background-color: black; */
     background-size: cover;
     height: 100vh;
