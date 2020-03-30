@@ -110,11 +110,13 @@
                     if(quesCounter === 1)
                     {
                       $('#prev').show();
+                      $('#end').hide();
                     } 
                     else if(quesCounter === 0)
                     {
                       $('#prev').hide();
                       $('#next').show();
+                      $('#end').hide();
                     }
                 }
               else 
@@ -123,6 +125,7 @@
                     quizSpace.append(scoreRslt).fadeIn();
                     $('#next').hide();
                     $('#prev').hide();
+                    $('#end').show();
                 }
         });
     }
