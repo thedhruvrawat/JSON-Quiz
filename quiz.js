@@ -110,14 +110,15 @@
                     if(quesCounter === 1)
                     {
                       $('#prev').show();
-                      $('#end').hide();
+                      
                     } 
                     else if(quesCounter === 0)
                     {
                       $('#prev').hide();
                       $('#next').show();
-                      $('#end').hide();
+                     
                     }
+                    $('#end').hide();
                 }
               else 
                 {
