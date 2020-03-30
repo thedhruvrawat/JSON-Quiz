@@ -52,15 +52,18 @@
         var header = $('<h2>Question No. ' + (index + 1) + ' :</h2>');
         element.append(header);
 
+        
+
         var question = $('<p>').append(allQuestions[index].question);
         element.append(question);
 
         var radio = radioButtons(index);
         element.append(radio);
 
+        
         let highlight = index+1;
         document.getElementById(highlight).style.background = 'greenyellow';
-
+        
         
         return element;
     }
@@ -90,6 +93,7 @@
         quizSpace.fadeOut(function() 
             {
               ++m;
+              
               document.getElementById("container").style.borderRadius = bordrad[m];
               
               $('#question').remove();
