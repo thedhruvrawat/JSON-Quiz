@@ -2,7 +2,7 @@ body
 {
     font-family: Tahoma, Geneva, sans-serif;
     color: #fff;
-    background: url(image1/back.jpg);
+    background: url(images/back.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -13,5 +13,5 @@ body
     left: 50%;
     font-size: 200px;
     margin-right: -50%;
-    transform: translate(-50%, -50%) }
+    transform: translate(-50%, -50%) 
 }

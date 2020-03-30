@@ -9,7 +9,7 @@ body{
     padding: 0;
     width: 100%;
     text-align: center;
-    background: url(image1/back.jpg) no-repeat 50% 50%;
+    background: url(images/back.jpg) no-repeat 50% 50%;
     /* background-color: black; */
     background-size: cover;
     height: 100vh;
@@ -90,3 +90,33 @@ path{
     transform: translateY(-0.1rem);
     transition: transform 150ms;
   }
+
+  a{
+    color: yellow;
+    text-decoration: blink;
+}
+a:hover
+{
+    color: skyblue;
+}
+        .start{
+            
+    border: none;
+    width: 190px;
+    background: #909398;
+    color: #000;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px 0;
+    align-content: center;        
+    border-radius: 15px;
+    cursor: pointer;
+
+        }
+        
+        .start:hover{
+            
+    color: #fff;
+    background-color: black;
+
+        }
