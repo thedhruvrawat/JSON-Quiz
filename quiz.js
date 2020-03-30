@@ -58,7 +58,9 @@
         var radio = radioButtons(index);
         element.append(radio);
 
-        
+        let highlight = index+1;
+        document.getElementById(highlight).style.background = 'greenyellow';
+
         
         return element;
     }
